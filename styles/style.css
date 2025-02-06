@@ -1,3 +1,5 @@
+@import 'variables.css';
+
 * {
     margin: 0;
     padding: 0;
@@ -10,7 +12,31 @@ body {
     font-family: var(--fontMain);
 }
 
+header, footer {
+    padding: 0.5rem 1rem;
+    text-align: center;
+    color: var(--colorSecondary);
+}
+
+header{
+    h1{font-family: var(--fontTitle);
+    margin-bottom: 1rem;}
+}
+
+main{
+    margin: 1rem;
+}
+
+footer{
+    color: var(--colorBgMain);
+    background-color: var(--colorSecondary);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
 nav{
+    margin-bottom: 1rem;
     ul{
         display: flex;
         flex-flow: row nowrap;
@@ -19,5 +45,13 @@ nav{
         li{
         list-style: none;
         }
+    }
+}
+
+a{
+    color: var(--colormain);
+    text-decoration: none;
+    &:hover{
+        font-weight: bold;
     }
 }

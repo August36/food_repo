@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <script src="js/contact.js" type="module"></script>
+    <title>Food Repo</title>
+</head>
+
+<body>
+    <header>
+        <h1>Food Repo</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html" title="Homepage">Home</a></li>
+                <li><a href="about.htm" title="About page">About</a></li>
+                <li><a href="contact.htm" title="Contact page">Contact</a></li>
+            </ul>
+        </nav>
+        <h2>Contact</h2>
+    </header>
+    <main>
+        <section id="contact-info">
+            <h3>Contact information</h3>
+            <address>
+                <div id="physical-adress">
+                    <p>Guldbergsgade 29N</p>
+                    <p>2200 k&oslash;benhavn N</p>
+                </div>
+                <p>Phone no. <a href="tel:+45 46 46 00 00">+45 46 46 00 00</a></p>
+                <p>Email adress: <a href="mailto:foodrepo@kea.dk" title="send an email to Food Repo">foodrepo@kea.dk</a>
+                </p>
+            </address>
+        </section>
+        <section>
+            <h3>Contact form</h3>
+            <form id="frmContact">
+                <fieldset>
+                    <div>
+                        <label for="txtName">Full name</label>
+                        <input type="text" id="txtName" required>
+                    </div>
+                    <div>
+                        <label for="txtEmail">Email address</label>
+                        <input type="email" id="txtEmail" required>
+                    </div>
+                    <div>
+                        <label for="txtComments">Comments</label>
+                        <textarea name="" id="txtComments" required></textarea>
+                    </div>
+                    <div>
+                        <button type="submit">
+                            Send comment
+                        </button>
+                    </div>
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 K&oslash;benhavns Erhvervsakademi Development </p>
+    </footer>
+</body>
+
+</html>
